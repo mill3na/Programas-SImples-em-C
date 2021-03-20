@@ -1,0 +1,14 @@
+
+//ASCII de um caractere
+
+#include <stdio.h>
+int main (){
+    char caractere;
+    printf("Digite um caractere:\t");
+    scanf("%c", &caractere);
+    printf("%c corresponde a %d", caractere, caractere);
+
+
+    return 0;
+}
+
