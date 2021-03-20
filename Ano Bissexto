@@ -1,0 +1,14 @@
+//Ano bissexto
+
+#include <stdio.h>
+#include <stdlib.h>
+int main (){
+    int ano;
+    printf("Este programa informa se o ano é bissexto ou não!\nVamos começar...\n");
+    printf("Digite o ano:\t");
+    scanf("%i", &ano);
+    if ((ano%4 == 0) && (ano%100 != 100))
+        printf("O ano  bissexto.\n!");
+    else
+        printf("O ano não  bissexto!\n");
+}
