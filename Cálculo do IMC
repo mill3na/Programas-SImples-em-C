@@ -1,0 +1,19 @@
+
+// Cálculo do IMC simples
+
+#include <stdio.h>
+
+int imc()
+{
+  printf("Olá!\nEste programa calcula o seu imc.\n\7");
+        float altura, massa, imc;
+        printf("Digite a sua altura e sua massa (separando casas decimais por ponto final):\t\7");
+        scanf("%f %f", &altura, &massa);
+        imc = massa/(altura * altura);
+        printf("Seu imc, baseado na altura de %f e na massa de %f vale %.2f!\n\7", altura, massa, imc);
+
+        if (imc<= 30) {printf("\nFim da execução.\n\7");}
+        if (imc > 30) {printf("Você está obeso!\nFim da execução.\n");}
+
+        return 0;
+}
