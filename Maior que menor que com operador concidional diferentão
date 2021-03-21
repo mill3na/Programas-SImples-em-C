@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(){
+    int x, y;
+    printf("Digite dois números:\n");
+    scanf("%i %i", &x, &y);
+    printf("Maior: %i.\n", x>y ? x : y); // se x > y, imprime o valor de x. Se não, imprime o valor de y
+}
