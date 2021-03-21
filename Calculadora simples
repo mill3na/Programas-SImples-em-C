@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+        float numero1, numero2;
+        char operador;
+        printf("Este programa é uma calculadora simples, com operações entre dois números.\n");
+        printf("\n\nMenu:\n[+] para soma;\n[-] para subtração;\n[*] para multiplicação;\n[/] para divisão;\n\n");
+        printf("Por favor, digite: o primeiro número [enter], o operador [enter] e o segundo número.\n");
+        scanf("%f %c %f", &numero1, &operador, &numero2);
+        switch (operador){
+            case '+': {
+                printf("%f %c %f = %f!\n", numero1, operador, numero2, (numero1 + numero2));
+                break;}
+            case '-':{
+                printf("%f %c %f = %f!\n", numero1, operador, numero2, (numero1 - numero2));
+                break;}
+            case '*':{
+                printf("%f %c %f = %f!\n", numero1, operador, numero2, (numero1 * numero2));
+                break;}
+            case '/':{
+                if (numero2 == 0) printf("Operação inválida, divisor não pode ser negativo!\n");
+                else printf("%f %c %f = %f!\n", numero1, operador, numero2, (numero1 / numero2));
+                break;}
+            default: printf("Opção inválida!");
+        }
+        return 0;
+     }
